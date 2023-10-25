@@ -64,7 +64,7 @@ function initPlanetsList() {
         
         planetItem.innerHTML = `
 
-            <img src="../images/${imageCounter}.png" alt="${planet}" width="50%">
+            <img src="/../images/${imageCounter}.png" alt="${planet}" width="50%">
             `;
 
         planetItem.addEventListener("click", function () {
