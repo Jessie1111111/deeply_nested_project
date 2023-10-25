@@ -1,0 +1,171 @@
+body {
+  
+background-image: url(../images/10.png); 
+background-size: 100%;  
+
+}
+.heading{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 40px;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation-name: fadeIn;       
+    animation-duration: 2s;       
+    animation-timing-function: ease-in; 
+    animation-fill-mode: forwards; 
+}
+.t1{
+    position: absolute; 
+    top: 50%;            
+    left: 25%;       
+    z-index: 2;     
+    font-size: 30px;
+    width: 1000px;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+    background-color:rgba(0, 0, 0, 0.5);
+
+    animation-name: fadeIn;       
+    animation-duration: 2s;       
+    animation-timing-function: ease-in; 
+    animation-fill-mode: forwards; 
+}
+.t2{
+    position: absolute; 
+    top: 80%;            
+    left: 25%;       
+    z-index: 2;     
+    font-size: 30px;
+    width: 300px;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+    background-color:rgba(0, 0, 0, 0.5);
+
+    animation-name: fadeIn;       
+    animation-duration: 2s;       
+    animation-timing-function: ease-in; 
+    animation-fill-mode: forwards; 
+}
+.back{
+    position: absolute; 
+    top: 20px;
+    left: 30px;
+    font-size: 30px;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+    background-color:rgba(0, 0, 0, 0.5);
+
+}
+.back1{
+    position: absolute; 
+    top: 100px;
+    left: 30px;
+    font-size: 30px;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+    background-color:rgba(0, 0, 0, 0.5);
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #planetsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 1500px;
+    height: 80vh;
+    color: #f0f0f0;
+    
+}
+
+.planetItem {
+    padding: 10px;
+    border-radius: 8px;
+    background-color:rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    
+} */
+.planetsList {
+    position: relative;
+    width: 300px;
+    height: 300px; 
+    
+    justify-content: center;
+}
+
+.planetItem {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 500px; 
+    height: 500px;
+    transform-origin: center; 
+
+   
+}
+.planetItem:nth-child(1) { transform: rotate(0deg) translate(700px); }
+.planetItem:nth-child(2) { transform: rotate(40deg) translate(300px); }
+.planetItem:nth-child(3) { transform: rotate(240deg) translate(800px); }
+.planetItem:nth-child(4) { transform: rotate(220deg) translate(1000px); }
+.planetItem:nth-child(5) { transform: rotate(160deg) translate(300px); }
+.planetItem:nth-child(6) { transform: rotate(200deg) translate(1200px); }
+.planetItem:nth-child(7) { transform: rotate(180deg) translate(800px); }
+.planetItem:nth-child(8) { transform: rotate(280deg) translate(700px); }
+.planetItem:nth-child(9) { transform: rotate(320deg) translate(800px); }
+
+.planetItem:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+
+    
+    
+}
+
+#image-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 90vh; 
+    flex-direction: column; 
+    z-index: 1;
+
+}
+
+
+#planetDetails{
+    color: #fff;
+    font-size: 23px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 1000px;
+    animation-name: fadeIn;       
+    animation-duration: 0.5s;       
+    animation-timing-function: ease-in; 
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;  /* 开始时完全透明 */
+    }
+    to {
+        opacity: 1;  /* 结束时完全不透明 */
+    }
+}
+
+
+    
